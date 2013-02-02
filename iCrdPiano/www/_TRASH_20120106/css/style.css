@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#piano-roll {
+	/*
+	margin-right: auto;
+	margin-left: auto;
+	*/
+	border: 1px solid #000;
+	widows: 400px;
+	height: 100px;
+}
+
+#paino-roll .keys li {
+	width: 50px;
+	height: 200px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: text-bottom;
+	margin: 0;
+	padding: 0;
+}
+
+#keys-black {
+	position: absolute;
+	margin-top: 0px;
+	margin-left: 25px;
+}
+
+#keys-black li {
+	background-color: #333;
+	
+	/*
+	background: #222;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#444), to(#222));
+	background: -webkit-linear-gradient(#444, #222);
+	background: -moz-linear-gradient(#444, #222);
+	background: -ms-linear-gradient(#444, #222;
+	background: -o-linear-gradient(#444, #222);
+	background: linear-gradient(#444, #222);
+	*/
+	
+	color: #DDD;
+	width: 30px !important;
+	height: 150px !important;
+	margin-left: 10px !important;
+	margin-right: 10px !important;
+}
+
+#keys-white li {
+	
+	background-color: #EEE;
+	
+	/*
+	background: #f9f9f9;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f9f9f9), to(#eee));
+	background: -webkit-linear-gradient(#f9f9f9, #eee);
+	background: -moz-linear-gradient(#f9f9f9, #eee);
+	background: -ms-linear-gradient(#f9f9f9, #eee;
+	background: -o-linear-gradient(#f9f9f9, #eee);
+	background: linear-gradient(#f9f9f9, #eee);
+	*/
+	
+	color: #333;
+}
+
+.keys .break {
+	background-color: transparent !important;
+}
+
+.note {
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 2px;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #696;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: #666 0px 2px 3px;
+	-moz-box-shadow: #666 0px 2px 3px;
+	box-shadow: #666 0px 2px 3px;
+	background: #EEFF99;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#EEFF99), to(#66EE33));
+	background: -webkit-linear-gradient(#EEFF99, #66EE33);
+	background: -moz-linear-gradient(#EEFF99, #66EE33);
+	background: -ms-linear-gradient(#EEFF99, #66EE33);
+	background: -o-linear-gradient(#EEFF99, #66EE33);
+	background: linear-gradient(#EEFF99, #66EE33);
+	margin-top: 110px;
+}
+
+#keys-white .note {
+	margin-top: 160px;
+}
+
+.note-root {
+	background: #FFEE99;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FFEE99), to(#EE6633));
+	background: -webkit-linear-gradient(#FFEE99, #EE6633);
+	background: -moz-linear-gradient(#FFEE99, #EE6633);
+	background: -ms-linear-gradient(#FFEE99, #EE6633);
+	background: -o-linear-gradient(#FFEE99, #EE6633);
+	background: linear-gradient(#FFEE99, #EE6633);
+}
+
+#app-navigation li {
+	text-align: center;
+}
+
+#app-navigation .title {
+	font-size: 36px;
+}
+
+#app-navigation input.ui-slider-input {
+	display: none;
+}
+

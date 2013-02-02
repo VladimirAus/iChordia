@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Piano</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tes/common.css" />
+    <!-- Media Query 1 -->
+    <link href="css/style-phone.css" rel="stylesheet" type="text/css" media="only screen and (min-width:460px) and (max-width:999px)">
+    <!-- Tablet -->
+    <link href="css/style-tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:1000px)">
+    <script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.mobile-1.2.0.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page" data-theme="e">
+
+	<div data-role="header">
+		<h1>Piano chords</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<form>
+        	<ul id="app-navigation" class="list-one-line">
+            	<li class="input"><input data-theme="a" type="range" name="slider-chord" id="slider-chord" value="1" min="1" max="12" /></li>
+                <li class="title"><h2><span class="title-chord">C#</span><span class="title-variation">m7</span></h2></li>
+                <li class="input"><input data-theme="a" type="range" name="slider-chord-variation" id="slider-chord-variation" value="1" min="1" max="8" /></li>
+            </ul>
+            <!--<label for="slider-chord">Chord:</label>
+            <label for="slider-chord-variation">Variation:</label>-->
+            <!--
+            <label for="flip-1">Root note first?</label><br />
+            <select data-theme="a" name="flip-first-root" id="flip-first-root" data-role="slider">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select> 
+            -->
+            
+        </form>	
+        <div id="paino-roll">
+        <ul id="keys-black" class="keys">
+        	<li>C#</li>
+            <li>D#</li>
+            <li id="break-black-1" class="break">&nbsp;</li>
+            <li>F#</li>
+            <li>G#</li>
+            <li>A#</li>
+            <li id="break-black-2" class="break">&nbsp;</li>
+        </ul>
+        <ul id="keys-white" class="keys">
+        	<li>C</li>
+            <li>D</li>
+            <li>E</li>
+            <li>F</li>
+            <li>G</li>
+            <li>A</li>
+            <li>B</li>
+        </ul>
+        </div>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+	app.initialize();
+	//app.loadEvents();
+</script>
+
+</body>
+</html>
